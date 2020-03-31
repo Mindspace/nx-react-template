@@ -1,0 +1,22 @@
+{
+  "npmScope": "react-nx-template",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "starter": {
+      "tags": []
+    },
+    "starter-e2e": {
+      "tags": [],
+      "implicitDependencies": ["starter"]
+    }
+  }
+}
